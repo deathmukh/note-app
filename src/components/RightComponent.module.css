@@ -1,0 +1,81 @@
+.container {
+    position: absolute;
+    width: 75vw;
+    height: 100%;
+    left: 400px;
+    top: 0;
+    background-color: #F7ECDC;
+}
+
+.titleBar {
+    position: absolute;
+    height: 8vh;
+    width: 71.5vw;
+    top: 0;
+    background-color: #E8E8E8;
+    border-radius: 0;
+    padding: 25px;
+}
+
+.titleBar h2 {
+    margin: 0;
+    padding: 24px;
+    color: #000000;
+    font-size: 36px;
+}
+.notes{
+  width: 70.5vw;
+  height: 65%;
+  padding-top: 10%;
+  left: 400px;
+  top: 0;
+  font-size: 18px; 
+  background-color: #F7ECDC;
+  overflow: scroll;
+}
+.noteContent{
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.noteContent1{
+  font-size: 18px;
+  font-weight: 100;
+  padding: 15px;
+}
+.inputBox {
+    width: 72vw;
+    height: 20%;
+    border-radius: 9px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #E8E8E8;
+    position:absolute;
+    bottom: 0px;   
+  }
+  
+  .inputBox img {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  
+  .inputBox input {
+    width: 71vw;
+    height: 20vh;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  } 
+  .submitButton{
+    border: none;
+    background-color: #E8E8E8;
+  }
