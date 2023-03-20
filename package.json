@@ -1,6 +1,6 @@
 {
+  "homepage": "http://deathmukh.github.io/note-app",
   "name": "note-app",
-  "homepage":"http://deathmukh.github.io/note-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
