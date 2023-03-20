@@ -9,6 +9,14 @@ export default function RightComponent(props) {
   function handleInputChange(event) {
     setInputValue(event.target.value)
   }
+  function getInitials(groupName) {
+    const words = groupName.split(" ");
+    if (words.length === 1) {
+      return words[0].substring(0, 2).toUpperCase();
+    } else {
+      return words[0][0].toUpperCase() + words[1][0].toUpperCase();
+    }
+  }
 
   function handleInputSubmit(event) {
 
@@ -40,13 +48,18 @@ export default function RightComponent(props) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.titleBar}>
+      <div className={styles.titleBar} style={{ display: 'flex'}}>
+        {selectedGroup && (
+          <div
+            className={styles.circle}
+            style={{ backgroundColor: JSON.parse(selectedGroup[1]).color }}
+          >
+            {getInitials(selectedGroup[0])}
+          </div>
+        )}
         <h1 style={{ color: selectedGroup?.color }}>
           {selectedGroup === null ? 'Select A Group' : selectedGroup[0]}
         </h1>
-
-        
-
       </div>
       <div className={styles.notes}>
         {selectedGroup === null ? '' :

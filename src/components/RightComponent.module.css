@@ -23,6 +23,23 @@
     color: #000000;
     font-size: 36px;
 }
+.circle {
+  height: 55px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 1%;
+  margin-right: 10px;
+}
+
+
 .notes{
   width: 70.5vw;
   height: 65%;
